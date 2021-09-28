@@ -1,0 +1,29 @@
+{
+  "name": "vite-plugin-antd3",
+  "version": "1.0.0",
+  "description": "这是用于antd3迁移vite时使用的插件",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xyl66/rollup-plugin-requiretoimport.git"
+  },
+  "keywords": [
+    "vite-plugin"
+  ],
+  "author": "xyl66",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/parser": "^7.15.7",
+    "@babel/traverse": "^7.15.4",
+    "@babel/types": "^7.15.6",
+    "param-case": "^3.0.4"
+  }
+}
