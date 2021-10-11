@@ -8,7 +8,7 @@ const traverse = require("@babel/traverse");
 const SUFFIX_QUEUE = ["jsx", "tsx", "js", "ts"];
 const ANTD_NODE_MODULES = path.join(process.cwd(), "node_modules");
 const REGX = /require\(["\w\./\\]+\)/g;
-function vitePluginAntd3() {
+function vitePluginAntd3({ suffix = "less" } = {}) {
   return {
     name: "vite-plugin-antd3",
     transform(code, file) {
@@ -36,7 +36,7 @@ function vitePluginAntd3() {
                     jsSource
                   )
                 );
-                const cssPath = `${importPath.node.source.value}/lib/${name}/style/index.css`;
+                const cssPath = `${importPath.node.source.value}/lib/${name}/style/index.${suffix}`;
                 try {
                   fs.accessSync(path.join(ANTD_NODE_MODULES, cssPath));
                   const cssSource = t.stringLiteral(cssPath);

@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-antd3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "这是用于antd3迁移vite时使用的插件",
   "main": "./src/index.js",
   "scripts": {
@@ -16,9 +16,9 @@
   "author": "xyl66",
   "license": "ISC",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/xyl66/vite-plugin-antd3"
   },
-  "homepage": "",
+  "homepage": "https://github.com/xyl66/vite-plugin-antd3",
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/parser": "^7.15.7",
